@@ -205,3 +205,57 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ========== ВАШ ПРОЕКТ Airflow + ClickHouse ==========
+
+# Docker и контейнеры
+docker-data/
+*.log
+compose.yaml
+docker-compose.override.yml
+
+# MinIO данные
+data/
+.minio.sys/
+
+# ClickHouse данные и логи
+clickhouse/data/
+clickhouse/log/
+clickhouse_docker/
+
+# Airflow
+airflow.db
+airflow.cfg
+standalone_admin_password.txt
+webserver_config.py
+
+# Конфиги с паролями (исключите реальные, но оставьте примеры)
+clickhouse/users/*.xml
+!clickhouse/users/*.example
+clickhouse/config/*.local.xml
+!clickhouse/config/*.example.xml
+
+# Локальные переменные окружения
+.env
+!.env.example
+
+# Временные файлы проекта
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Логи приложений
+*.log
+logs/
+
+# JetBrains IDE
+.idea/
+*.iml
+*.ipr
+*.iws
