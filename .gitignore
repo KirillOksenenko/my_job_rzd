@@ -259,3 +259,4 @@ logs/
 *.iml
 *.ipr
 *.iws
+/cred.py
